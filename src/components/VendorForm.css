@@ -1,0 +1,83 @@
+/* src/components/VendorForm.css */
+
+.vendor-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.vendor-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.vendor-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.vendor-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.vendor-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.vendor-form .button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vendor-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.vendor-form button:hover {
+    background-color: #0056b3;
+}
+
+.vendor-form .cancel-button {
+    background-color: #dc3545;
+}
+
+.vendor-form .cancel-button:hover {
+    background-color: #c82333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,6 @@
+.content {
+    padding: 20px;
+    /* Add space between the appbar and content */
+    margin-top: 50px;
+    /* Ensure content starts below the Appbar */
+}

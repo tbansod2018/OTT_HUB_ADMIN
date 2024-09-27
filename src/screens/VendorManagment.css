@@ -1,0 +1,121 @@
+/* src/screens/Vendor.css */
+
+.vendor-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.vendor-section {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.vendor-request-card,
+.approved-vendor-card {
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.vendor-request-card:hover,
+.approved-vendor-card:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.approve-button,
+.reject-button,
+.edit-button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    flex: 1;
+    /* Makes buttons take equal width */
+}
+
+.approve-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.approve-button:hover {
+    background-color: #218838;
+}
+
+.reject-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reject-button:hover {
+    background-color: #c82333;
+}
+
+.edit-button {
+    background-color: #007BFF;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0069d9;
+}
+
+/* Additional styling for mobile responsiveness */
+@media (max-width: 600px) {
+    .vendor-container {
+        padding: 10px;
+    }
+
+    .add-button,
+    .approve-button,
+    .reject-button,
+    .edit-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

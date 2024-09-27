@@ -1,0 +1,54 @@
+/* Styles for the Appbar */
+nav {
+    background: linear-gradient(to right, #31339e, #1f4277, #3f618d, #3e6daa, #78abdb);
+    color: white;
+
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    color: white;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+li:hover {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* Active tab styling */
+li.active {
+    background-color: #17a2b8;
+    /* Same as hover color */
+    color: white;
+}
+
+li::before {
+    content: ' ';
+}
+
+/* Prevent anchor from changing color */
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover {
+    color: inherit;
+}
